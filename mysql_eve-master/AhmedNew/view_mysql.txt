@@ -1,0 +1,12 @@
+****SINGLE TABLE VIEW****
+CREATE VIEW products_view_2 AS
+SELECT id,name, price FROM product
+WHERE price > 5000
+
+***MULTIPLE TABLE VIEW****
+
+CREATE VIEW product_details AS
+SELECT product.id, product.name AS ProductName,
+ price, manufacturer.name AS ManufacturerName, address FROM product, manufacturer
+WHERE product.manufacturer_id =manufacturer.id 
+##########################

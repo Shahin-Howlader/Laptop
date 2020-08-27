@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Address</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$("document").ready(function(){
+			$("#submit").click(function(){
+
+
+				var name = $("#name").val();
+				var email = $("#email").val();
+				var address = $("#address").val();
+				var value = "Name:" + name + "<br>" + "Email:" + email + "<br>" + "Addess:" + address;
+
+				$("#show").html(value);
+			});
+
+		});
+	</script>
+</head>
+<body>
+	<form action="">
+		<label>Name :</label>
+		<input type="text" id="name"><br><br>
+
+		<label>Email :</label>
+		<input type="text" id="email"><br><br>
+
+		<label>Addess :</label>
+		<textarea id="address"></textarea><br><br>
+
+		<button id="submit" type="button">Click</button>
+		
+	</form>
+	<h1 id="show"></h1>
+
+</body>
+</html>

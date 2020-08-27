@@ -1,0 +1,6 @@
+CREATE table account (
+id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+name VARCHAR(50) NOT NULL, 
+account_type ENUM('Savings', 'Current') NOT NULL,
+opening_balance INT(11) NOT NULL
+) ;

@@ -1,0 +1,2 @@
+Q3. Create a view to display all records from the product table where price is greater than 5000. 
+Write php script to  display the data from the view.

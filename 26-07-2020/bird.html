@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Attribute Selector</title>
+	<script src="js/jquery.min.js"></script>
+	<style type="text/css">
+		tr {
+			border: 1px;
+		}
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#img1').hover(function(){
+				$('img').attr({
+					src:"bird1.jpg"
+				});
+
+			});
+			
+		 
+		});
+	</script>
+	<img id="img1" src="bird.jpg" alt="This is Bird" height="300px">
+	</head>
+<body>
+
+
+
+</body>
+</html>

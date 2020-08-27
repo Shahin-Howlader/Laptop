@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Attribute Selector</title>
+	<script src="js/jquery.min.js"></script>
+	<style type="text/css">
+		tr {
+			border: 1px;
+		}
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("li:nth-last-child(2)").css("background-color", "red");
+			$("li:nth-last-child(1)").css("background-color", "green");
+		 
+		});
+	</script>
+	</head>
+<body>
+	<ul>
+		<li>Shain1</li>
+		<li>Shain2</li>
+		<li>Shain3</li>
+		<li>Shain4</li>
+	</ul>
+	<ul>
+		<li>Shain1</li>
+		<li>Shain2</li>
+		<li>Shain3</li>
+		<li>Shain4</li>
+	</ul>
+	<ul>
+		<li>Shain1</li>
+		<li>Shain2</li>
+		<li>Shain3</li>
+		<li>Shain4</li>
+	</ul>
+
+
+
+</body>
+</html>

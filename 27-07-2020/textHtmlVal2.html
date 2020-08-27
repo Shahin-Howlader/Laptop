@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Attribute Selector</title>
+	<!-- <script src="../js/jquery.min.js"></script> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+	<h1>Text, Html, Val</h1>
+	<script>
+		$(document).ready(function(){
+			$("#btn1").click(function(){
+				$("#p1").text("Tuhin");
+
+			});
+			$("#btn2").click(function(){
+				$("#p2").html("<h2>Amena</h2>");
+
+			});	
+			$("#btn3").click(function(){
+				$("#p3").val("Amena");
+
+			});	
+		 
+		});
+	</script>
+	<p id="p1">Monir</p>
+	<p id="p2">Shahin</p>
+	<p><input type="text" id="p3" value="Hasib"></p>
+
+
+	<button id="btn1">Button1</button>
+	<button id="btn2">Button2</button>
+	<button id="btn3">Button3</button>
+	
+
+
+</body>
+</html>

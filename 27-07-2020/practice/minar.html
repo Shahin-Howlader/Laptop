@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<script src="jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("#submit").click(function(){
+				var name = $("#name").val();
+				var email = $("#email").val();
+				var address = $("#address").val();
+				var value = "Name:"+name +"<br> Email: " +email+ "<br>"+address;
+				$("#show").html(value);
+			});
+		});
+	</script>
+</head>
+<body>
+	<div class="jumbotron">
+	<form action="">
+		name: <input type="text" name="name" id="name"><br>
+		email: <input type="email" name="email" id="email"><br>
+		address: <input type="text" name="address" id="address"><br>
+		<button type="button" id="submit">check</button>
+	</form>
+		<h1 class="bg-danger" id="show"></h1>
+	</div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Attribute Selector</title>
+	<!-- <script src="../js/jquery.min.js"></script> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+	<h1>Text, Html, Val</h1>
+	<script>
+		$(document).ready(function(){
+			jQuery("#btn1").click(function(){
+			var x= jQuery("$p1").html();
+			var y= jQuery("$p1").text();
+			alert(x);
+			alert(y);
+
+			});
+			jQuery(".btn2").click(function(){
+				var x = jQuery("#name").val();
+				alert(x);
+			});
+			
+			
+		 
+		});
+	</script>
+	</head>
+<body>
+	<button id="btn1">Click</button>
+	<button class="btn2">Click</button>
+	<p id="p1"><strong>Paragraph Center</strong></p>
+	<input type="text" id="name" name="" value="Al Maksumi">
+
+
+</body>
+</html>

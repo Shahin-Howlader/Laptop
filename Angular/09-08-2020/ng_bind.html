@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>AngularJS</title>
+	<script src="js/angular.min.js"></script>
+</head>
+<body>
+	<div ng-app="" ng-init="cities=['Dhaka','Cumilla','Barishal']">
+
+		<ol>
+			<li ng-repeat="x in cities">
+				{{ x }}
+			</li>
+		</ol>
+
+		<hr>
+
+	<span ng-init="persion=[
+	{fname:'Abdul',lname:'Mannan',age:'28'},
+	{fname:'Abdul',lname:'Hannan',age:'27'},
+	{fname:'Abdul',lname:'Karim',age:'25'}
+	]">
+		
+	</span>
+
+	<table border="1">
+	<tr>
+		<th>fName</th>
+		<th>lName</th>
+		<th>Age</th>
+	</tr>
+	<tr ng-repeat="x in persion">
+		
+		<td ng-bind="x.fname"></td>
+		<td ng-bind="x.lname"></td>
+		<td ng-bind="x.age"></td>
+	</tr>
+		
+		
+	</table>
+
+		
+	</div>
+	
+	
+</body>
+</html>

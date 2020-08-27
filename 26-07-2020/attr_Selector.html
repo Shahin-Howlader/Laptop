@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Attribute Selector</title>
+	<script src="js/jquery.min.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("button").click(function(){
+				var x = $ ("a[target==_blank]").html();
+				alert(x);
+
+			});
+
+
+		});
+		
+
+
+	</script>
+	<button>Click Here</button>
+	<a href="http://www.yahoo.com">Hi Shahin</a>
+
+</body>
+</html>

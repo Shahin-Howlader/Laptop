@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    $("p").append(" <b>Appended text</b>.");
+  });
+
+  $("#btn2").click(function(){
+    $("ol").prepend("<li>Appended item</li>");
+  });
+   $("#btn3").click(function(){
+    $("ol").before("<li>Appended item</li>");
+  });
+    $("#btn4").click(function(){
+    $("ol").after("<li>Appended item</li>");
+  });
+});
+</script>
+</head>
+<body>
+
+<p>Monir.</p>
+<p>Tuhin.</p>
+
+<ol>
+  <li>List item 1</li>
+  <li>List item 2</li>
+  <li>List item 3</li>
+  <li>List item 4</li>
+</ol>
+
+<button id="btn1">Append text</button>
+<button id="btn2">Prepend</button>
+<button id="btn3">After</button>
+<button id="btn4">Before</button>
+
+</body>
+</html>

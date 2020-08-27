@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="" ng-init="cities['Dhaka','Barisal','Chandpur','Feni']">
+
+<ol>
+	<li ng-repeat="x in cities">
+		{{x}}
+	</li>
+
+<span ng-init="person=[
+{fname:'Abdul', lname:'Gafur', age: 20, address:'Mirpur'},
+{fname:'Abdul', lname:'Gafur', age: 22, address:'Kallanpur'},
+{fname:'Abdul', lname:'Gafur', age: 24, address:'Dhanmondhi'},
+{fname:'Abdul', lname:'Gafur', age: 26, address:'Norshindhi'}
+
+]">
+	
+</span>
+<table border="1">
+	<tr>
+		<th>First Name</th>
+		<th>Last Name</th>
+		<th>Age</th>
+		<th>Address</th>
+	</tr>
+	<tr ng-repeat="y in person">
+		<td>{{y.fname}}</td>
+		<td>{{y.lname}}</td>
+		<td>{{y.age}}</td>
+		<td>{{y.address}}</td>
+	</tr>
+	
+</table>
+
+</div>

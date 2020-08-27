@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <!--JQuery CDN-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!--jQuery ready function-->
+  <script>
+    $(document).ready(function(){
+      $('#insert').click(function(event){
+        //prevent default get submission
+        event.preventDefault();
+        //load using ajax
+        $.ajax({
+          url: "insert.php",
+          method: "POST",
+          data: $('form').serialize(),
+          dataType: "text",
+          success: function(strMessage){
+            $('#message').text(strMessage)
+          }
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+  <h1>INSERT FORM VALUES INTO DATABASE</h1>
+  <p id="message"></p>
+  <form action="" method="post">
+    <table cellpadding="5" cellspacing="5">
+      <tr>
+        <th>First Name</th>
+        <td><input type="text" id="fname" name="fname" ></td>
+      </tr>
+      <tr>
+        <th>Last Name</th>
+        <td><input type="text" id="lname" name="lname" ></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center">
+          <input type="submit" name="insert" id="insert" value="INSERT">
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>

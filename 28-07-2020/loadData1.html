@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+  <script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#myid").load("load.php", function(responseTxt, statusTxt, xhr){
+      alert("Uploaded Successfully From Php");
+
+    });
+  });
+
+});
+</script>
+<button>Click</button>
+<div id="myid"></div>
+
+
+
+</body>
+</html>

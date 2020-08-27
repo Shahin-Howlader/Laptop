@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery Show Alert</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<script> 
+    $(document).ready(function(){ 
+        var input=$("input:radio").wrap( 
+        "<div></div>").parent().css({ 
+        background:"green", 
+        display:"inline" 
+    }) 
+    console.log(input) 
+    }); 
+</script> 
+
+</head>
+<body>
+	<input type="text" name="fname"><br>
+	<input type="text" name="lname"><br>
+	<input type="radio" name="gender" value="Male">Male
+	<input type="radio" name="gender" value="Female">Female
+	<button type="submit">Button</button>
+	
+</body>
+</html>
